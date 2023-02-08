@@ -1,0 +1,352 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+.conteiner {
+    display: flex;
+
+}
+
+#barra {
+    position: fixed;
+    width: 200px;
+    height: 50%;
+    background-color: darkgray;
+    left: -212px;
+}
+
+#barra.active {
+    left: 0;
+}
+
+#barra ul li {
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#barra .barra-btn {
+    position: absolute;
+    left: 230px;
+    cursor: pointer;
+}
+
+#barra .barra-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.barra-btn {
+    margin: 0;
+    padding: 0;
+}
+
+#datosP:hover {
+    box-shadow: 0 0.1rem 0.4rem rgb(255, 255, 255);
+}
+
+div#datosP {
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(212, 212, 212);
+    margin: 45px 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 150%;
+    height: 150%;
+}
+
+div.avatar {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.btn1 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn1::before {
+    content: "e-mail";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn1::after {
+    content: "nikobellic@hotmail.com";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn1:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn1:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn2 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn2::before {
+    content: "teléfono";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn2::after {
+    content: "4233-2204";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn2:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn3 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn3::before {
+    content: "célular";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn3::after {
+    content: "1104221099";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn3:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn3:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn4 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn4::before {
+    content: "Dirección";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn4::after {
+    content: "c/liberty22,3°1°City(sur)";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn4:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn4:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.barras {
+    background-color: green;
+}
+
+.contacto {
+    width: 1500px;
+    height: 600px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: 45px 10px;
+    padding: 1px 40px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.h2contac {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: #000;
+    border-bottom: solid 3px white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: solid 2px black;
+}
+
+input:focus {
+    border-bottom: solid 2px white;
+}
+
+p:before{
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: white;
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: solid 2px black;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover {
+    background: gray;
+    color: white;
+}
+
+.info {
+    background-color: white;
+    margin: 45px 10px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 200%;
+    height: 100%
+}

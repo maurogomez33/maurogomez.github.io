@@ -1,0 +1,374 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+.conteiner {
+    display: flex;
+
+}
+
+#barra {
+    position: fixed;
+    width: 200px;
+    height: 50%;
+    background-color: darkgray;
+    left: -212px;
+}
+
+#barra.active {
+    left: 0;
+}
+
+#barra ul li {
+    color: rgb(3, 3, 3);
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#barra .barra-btn {
+    position: absolute;
+    left: 230px;
+    cursor: pointer;
+}
+
+#barra .barra-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid darkgray;
+}
+
+.barra-btn {
+    margin: 0;
+    padding: 0;
+}
+
+#datosP:hover {
+    box-shadow: 0 0.1rem 0.4rem rgb(255, 255, 255);
+}
+
+div#datosP {
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(212, 212, 212);
+    margin: 45px 10px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 150%;
+    height: 150%;
+}
+
+div.avatar {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+div.formacion {
+    background-color: darkgray;
+    padding: 10px 10px;
+    margin: 45px 10px;
+    width: 10px 10px;
+    height: 100%;
+}
+
+.sub {
+    text-align: center;
+    color: rgb(133, 3, 3);
+}
+
+.insignia {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entrenamiento {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 115%;
+}
+
+/** quería hacer botones con js, pero no me salían entonces
+usé el metodo con el css */
+
+.btn1 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn1::before {
+    content: "e-mail";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn1::after {
+    content: "nikobellic@hotmail.com";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn1:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn1:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn2 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn2::before {
+    content: "teléfono";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn2::after {
+    content: "4233-2204";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn2:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn2:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn3 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn3::before {
+    content: "célular";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn3::after {
+    content: "1104221099";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn3:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn3:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.btn4 {
+    padding: 1.0rem 10rem;
+    background: darkgray;
+    border: 0.2rem solid gray;
+    cursor: pointer;
+    position: relative;
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+.btn4::before {
+    content: "Dirección";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+}
+
+.btn4::after {
+    content: "c/liberty22,3°1°City(sur)";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.0rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .1rem #333;
+    transition: .2s ease;
+    opacity: 0;
+}
+
+.btn4:hover::before {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+}
+
+.btn4:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.barras {
+    background-color: green;
+}
+
+.exp {
+    background-color: darkgray;
+    position: absolute;
+    margin-top: 835px;
+    margin-left: 10px;
+    padding: 25px 30px;
+}
+
+.letras {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 100%;
+    color: rgb(20, 2, 99);
+}
+
+.ref {
+    background-color: darkgray;
+    position: absolute;
+    margin-top: 835px;
+    margin-left: 396px;
+    padding: 25px 30px;
+}
+
+.letras2 {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 90%;
+    color: rgb(20, 2, 99);
+}
+
+.LR {
+    color: rgb(44, 44, 44);
+}
+
+.footer {
+    background-color: bisque;
+    position: absolute;
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 1510px;
+    margin-left: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.ai {
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 95%;
+}
+
+.pie {
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    margin-top: 1690px;
+    margin-left: 1235px;
+}
+
+.pi {
+    color: rgb(255, 255, 255);
+}
